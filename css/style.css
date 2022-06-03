@@ -24,6 +24,17 @@ html{
     overflow: hidden;
 }
  
+html::-webkit-scrollbar{
+    width:1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:#222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--yellow);
+}
 
 body{
     background:#111;
@@ -423,8 +434,11 @@ header .navbar ul li a:hover{
  
  }
 
-@media (max-width:400px){
-
+@media (max-width:450px){
+html{overflow: visible;}
+.none-at-phone{
+    display: none;
+}
     header{
         width: 100vw;
     }
