@@ -435,7 +435,7 @@ header .navbar ul li a:hover{
  }
 
 @media (max-width:450px){
-html{overflow: visible;}
+html{overflow: visible;overflow-x: hidden;}
 .none-at-phone{
     display: none;
 }
