@@ -172,7 +172,8 @@ header .navbar ul li a:hover {
   color: #fff;
 }
 
-.home h1, .text {
+.home h1,
+.text {
   font-size: 5rem;
   color: #fff;
 }
@@ -454,19 +455,39 @@ header .navbar ul li a:hover {
   }
 }
 
-
-
 /* formissubmitted.html */
-.textcontainer{
-  
+.textcontainer {
   display: flex;
   align-items: center;
   justify-content: start;
   height: 100vh;
+  position: relative;
   overflow: hidden;
-  /* margin-left: -30%; */
+   
 }
-.text{
+.text {
   color: #333;
   background-color: var(--yellow);
+}
+
+.textcontainer .btn {
+  padding: 0.7rem 3rem;
+  background: #333;
+  color: #fff;
+  position: absolute;
+  top: 400px;
+  right: 600px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+
+.textcontainer .btn i {
+  padding: 0 0.5rem;
+  font-size: 1.8rem;
+}
+
+.textcontainer .btn:hover {
+  background: var(--yellow);
 }
